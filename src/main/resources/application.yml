@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: kamalov_sat
+  security:
+    user:
+      name: rakhim
+      password: test
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kamalov_sat
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+  liquibase:
+    enabled: off
+    change-log: db/changelog/changelog-master.yml
