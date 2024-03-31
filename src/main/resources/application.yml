@@ -1,15 +1,33 @@
+server:
+  port: 8080
 spring:
   application:
     name: kamalov_sat
-  security:
-    user:
-      name: rakhim
-      password: test
   datasource:
     url: jdbc:postgresql://localhost:5432/kamalov_sat
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: postgres
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: rakhim
+    password: rakhim
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
   liquibase:
-    enabled: off
     change-log: db/changelog/changelog-master.yml
+    enabled: off
+token:
+  signing:
+    key: qBTmv4oXFFR2GwjexDJ4t6fsIUIUhhXqlktXjXdkcyygs8nPVEwMfo29VDRRepYDVV5IkIxBMzr7OEHXEHd37w==

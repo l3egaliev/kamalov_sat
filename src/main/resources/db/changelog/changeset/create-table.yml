@@ -41,3 +41,6 @@ databaseChangeLog:
                   type: varchar
                   constraints:
                     nullable: false
+              - column:
+                  name: role
+                  type: varchar

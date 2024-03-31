@@ -20,3 +20,6 @@ databaseChangeLog:
               - column:
                   name: password
                   value: test
+              - column:
+                  name: role
+                  value: ADMIN
